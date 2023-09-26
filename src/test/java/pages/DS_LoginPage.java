@@ -1,9 +1,16 @@
 package pages;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import utilities.ConfigReader;
 
 public class DS_LoginPage {
 	WebDriver driver;
@@ -37,6 +44,16 @@ public class DS_LoginPage {
 	}
 	public void clickOnLoginButton()
 	{
+		loginbutton.click();
+	}
+	public void login()  
+	{
+	
+		
+		Properties prop = ConfigReader.intializeProperties();
+		
+		username.sendKeys(prop.getProperty("valid_username"));
+		password.sendKeys(prop.getProperty("valid_password"));
 		loginbutton.click();
 	}
 }

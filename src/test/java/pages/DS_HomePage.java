@@ -26,6 +26,11 @@ public class DS_HomePage {
 	@FindBy(xpath="//*[text()=\"Sign in\"]")
 	private WebElement signin;
 	
+	@FindBy(xpath="//a[contains(@href,\"data-structures-introduction\")]")
+	private WebElement ds_intro;
+	
+	
+	
 
 	
 	public void clickOnRegisterLink()
@@ -59,7 +64,10 @@ public class DS_HomePage {
 		signin.click();
 	}
 
-
+	public void clickOnDSintroLink()
+	{
+		ds_intro.click();
+	}
 
 
 }

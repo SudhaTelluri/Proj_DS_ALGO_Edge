@@ -50,4 +50,8 @@ public class DS_LoginSteps {
 		Assert.assertTrue(homePage.signOutLink());
 		
 	}
+	public WebDriver getDriver()
+	{
+		return driver;
+	}
 }
