@@ -8,11 +8,10 @@ Feature: Automating data structure introduction page
     Then User click on Sign in link
     When User enters valid Username, password and click on Login button
     Then User should login successfully
-    
-    
+
+	@smoke @all
+  @TS_DS_Intro_01
   Scenario: Verifying DataStructure textbox editor with valid Python code
-    #When User enters valid Username, password and click on Login button
-    #Then User should login successfully
     When User clicks on Get Started link of DataStructures intro page
     Then User navigates to editor page
     When Enters the basic python code in editor and click on run

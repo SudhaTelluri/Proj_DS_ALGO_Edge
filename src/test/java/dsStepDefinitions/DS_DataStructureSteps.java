@@ -15,7 +15,7 @@ import io.cucumber.java.en.*;
 import pages.DS_DataStructurePage;
 import pages.DS_HomePage;
 import pages.DS_LoginPage;
-import pages.TryEditor;
+import pages.DS_TryEditor;
 import utilities.ExcelElements;
 import utilities.ExcelReader;
 
@@ -39,24 +39,28 @@ public class DS_DataStructureSteps {
 
 	@Then("User navigates to editor page")
 	public void user_navigates_to_editor_page() {
-		TryEditor tryEditor=new TryEditor(driver);
+		DS_TryEditor tryEditor=new DS_TryEditor(driver);
 		tryEditor.getEditorTextBox().click();
 	    }
 
 	@When("Enters the basic python code in editor and click on run")
 	public void enters_the_basic_python_code_in_editor_and_click_on_run() throws InvalidFormatException, IOException {
-		TryEditor tryEditor=new TryEditor(driver);
+		DS_TryEditor tryEditor=new DS_TryEditor(driver);
 		tryEditor.senddatatoEditorTextbox();
 	    }
 
 	@Then("Output should print on editor")
 	public void output_should_print_on_editor() {
-		TryEditor tryEditor=new TryEditor(driver);
+		DS_TryEditor tryEditor=new DS_TryEditor(driver);
 		tryEditor.clickOnRunButton();
 		String output=tryEditor.getTextFromOutput();
 		System.out.println("Output of sample DataStructure code :"+output);
 		
 	    }
+	public WebDriver getDriver()
+	{
+		return driver;
+	}
 
 
 }

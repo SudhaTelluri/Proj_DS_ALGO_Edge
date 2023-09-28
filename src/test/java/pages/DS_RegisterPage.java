@@ -40,7 +40,7 @@ public class DS_RegisterPage {
 	public void register() {
 	
 		java.util.Random random=new java.util.Random();
-		int random_int=random.nextInt(100);
+		int random_int=random.nextInt(300);
 	
 		username.sendKeys("Shambhavi"+random_int);
 		String var2="Vishnuvu"+random_int;

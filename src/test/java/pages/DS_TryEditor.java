@@ -4,14 +4,15 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.ExcelElements;
 
-public class TryEditor {
+public class DS_TryEditor {
 	WebDriver driver;
-	public TryEditor(WebDriver driver)
+	public DS_TryEditor(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
@@ -29,8 +30,10 @@ public class TryEditor {
 	{
 		editortextbox.click();		
 		ExcelElements excel=new ExcelElements();
-		String code=excel.getCodefromExcel("Data", 1);
-		excel.enterCode(code, editortextbox);
+		String code=excel.getCodefromExcel("Data", 0);
+		Actions actions=new Actions(driver);
+		actions.sendKeys(editortextbox, code).build().perform();
+		//excel.enterCode(code, editortextbox);
 		
 		}
 	

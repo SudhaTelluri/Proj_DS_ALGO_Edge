@@ -29,6 +29,13 @@ public class DS_HomePage {
 	@FindBy(xpath="//a[contains(@href,\"data-structures-introduction\")]")
 	private WebElement ds_intro;
 	
+	@FindBy(xpath="//*[text()=\"Data Structures\"]")
+	private WebElement dataStructuredropdown;
+	
+	@FindBy(xpath="//*[text()=\"Arrays\"]")
+	private WebElement Arraysoptions;
+	
+	
 	
 	
 
@@ -67,6 +74,12 @@ public class DS_HomePage {
 	public void clickOnDSintroLink()
 	{
 		ds_intro.click();
+	}
+	
+	public void gotoArraysPage()
+	{
+		dataStructuredropdown.click();
+		Arraysoptions.click();
 	}
 
 
