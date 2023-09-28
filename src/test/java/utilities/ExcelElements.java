@@ -60,5 +60,11 @@ public class ExcelElements {
 		LoggerLoad.info("Expected result from Excel sheetname " + sheetname + " and " + rownumber + " : " + result);
 		return result;
 	}
+	
+//	public void moveToElement(WebElement element)
+//	{
+//		Actions actions = new Actions(driver);
+//		actions.scrollToElement(element).build().perform();
+//	}
 
 }

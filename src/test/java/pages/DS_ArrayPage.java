@@ -15,6 +15,7 @@ import utilities.ExcelElements;
 public class DS_ArrayPage {
 	
 	WebDriver driver;
+	ExcelElements excelElements=new ExcelElements();
 	
 public DS_ArrayPage(WebDriver driver)
 {
@@ -25,6 +26,16 @@ public DS_ArrayPage(WebDriver driver)
 private WebElement arraysinPython;
 @FindBy(xpath="//*[text()=\"Try here>>>\"]")
 private WebElement tryhere;
+
+@FindBy(xpath="//*[text()=\"Arrays Using List\"]")
+private WebElement arraysUsingList;
+
+@FindBy(xpath="//*[text()=\"Basic Operations in Lists\"]")
+private WebElement basicOperationsInLists;
+
+@FindBy(xpath="//*[text()=\"Applications of Array\"]")
+private WebElement applicationsofArray;
+
 
 public void clickOnArraysinPython()
 {
@@ -38,11 +49,27 @@ public void enterPythonCode(String sheetName,int rowNum) throws InvalidFormatExc
 {
 	DS_TryEditor tryEditor=new DS_TryEditor(driver);
 	Actions actions=new Actions(driver);
-	ExcelElements excelElements=new ExcelElements();
+	
 	String code=excelElements.getCodefromExcel(sheetName, rowNum);
 	actions.sendKeys(tryEditor.getEditorTextBox(), code).build().perform();
-	
+}
+public void clickOnArraysUsingList()
+{
+	Actions actions=new Actions(driver);
+	actions.scrollToElement(arraysUsingList).build().perform();
+	arraysUsingList.click();
 	
 }
+public void clickOnBasicOperationsInLists()
+{
+	basicOperationsInLists.click();
+}
+public void clickOnApplicationsofArray()
+{
+	applicationsofArray.click();
+}
+
+
+
 
 }

@@ -58,4 +58,40 @@ public class DS_ArraySteps {
 
 	}
 
+	@When("User click on Arrays Using List link")
+	public void user_click_on_arrays_using_list_link() {
+		arrayPage.clickOnArraysUsingList();
+	}
+
+	@When("User enters Arrays using List python code in tryEditor from sheet {string} and rownumber {int}")
+	public void user_enters_arrays_using_list_python_code_in_try_editor_from_sheet_and_rownumber(String sheetName,
+			Integer rowNum) throws InvalidFormatException, IOException {
+
+		arrayPage.enterPythonCode(sheetName, rowNum);
+
+	}
+
+	@When("User click on Basic Operations in Lists")
+	public void user_click_on_basic_operations_in_lists() {
+		arrayPage.clickOnBasicOperationsInLists();
+			}
+
+	@When("User enters basic operations of list code in tryEditor from sheet {string} and rownumber {int}")
+	public void user_enters_basic_operations_of_list_code_in_try_editor_from_sheet_and_rownumber(String sheetName,
+			Integer rowNum) throws InvalidFormatException, IOException {
+		arrayPage.enterPythonCode(sheetName, rowNum);
+			}
+	@When("User click on Applications of Array link")
+	public void user_click_on_applications_of_array_link() {
+		arrayPage.clickOnApplicationsofArray();
+	    	}
+
+	@When("User enters Applications of Array code in tryEditor from sheet {string} and rownumber {int}")
+	public void user_enters_applications_of_array_code_in_try_editor_from_sheet_and_rownumber(String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
+		arrayPage.enterPythonCode(sheetName, rowNum);
+	    	}
+
+
+
+
 }
