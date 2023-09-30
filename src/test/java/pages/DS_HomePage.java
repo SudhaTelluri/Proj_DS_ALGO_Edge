@@ -38,7 +38,10 @@ public class DS_HomePage {
 	
 	@FindBy(xpath="//a[@href=\"/stack\"]")
 	private WebElement stack;
-	
+
+	@FindBy(xpath="//a[@href=\"/tree\"]")
+	private WebElement tree;
+
 	
 	
 	
@@ -94,6 +97,13 @@ public class DS_HomePage {
 		Actions actions=new Actions(driver);
 		actions.moveToElement(stack).click().build().perform();
 	}
+	public void clickOnTreeLink()
+	{
+		Actions actions=new Actions(driver);
+		actions.moveToElement(tree).click().build().perform();
+
+	}
+
 
 
 }
