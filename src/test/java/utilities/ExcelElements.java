@@ -18,7 +18,7 @@ import factory.DriverFactory;
 
 public class ExcelElements {
 	public static WebDriver driver = DriverFactory.getDriver();;
-	String Excelpath = "C:\\Users\\sudha\\OneDrive\\Documents\\GitHub\\Projects\\Proj-DS-ALGO\\src\\test\\resources\\exceldata\\PythonData.xlsx";
+	String Excelpath = "C:\\Users\\sudha\\OneDrive\\Documents\\GitHub\\Projects\\Proj-DS-ALGO\\src\\test\\resources\\exceldata\\xldata.xlsx";
 	String code;
 	String result;
 

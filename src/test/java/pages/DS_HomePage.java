@@ -81,6 +81,10 @@ public class DS_HomePage {
 		dataStructuredropdown.click();
 		Arraysoptions.click();
 	}
+	public void clickOnDataStructuredropdown()
+	{
+		dataStructuredropdown.click();
+	}
 
 
 }
