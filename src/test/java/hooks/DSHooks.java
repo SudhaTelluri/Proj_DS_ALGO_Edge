@@ -34,7 +34,7 @@ public void setUp(Scenario scenario)
 	driver.get(prop.getProperty("url"));
 }
 //after hook run after each scenario
-@After
+//@After
 public void tearDown(Scenario scenario)
 {
 driver.quit();
