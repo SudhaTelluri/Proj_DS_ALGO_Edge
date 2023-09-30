@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import pages.DS_HomePage;
-import pages.DS_StackPages;
+import pages.DS_StackPage;
 
 public class DS_StackSteps {
 	DS_LinkedListSteps linkedListSteps=new DS_LinkedListSteps();
 	WebDriver driver=linkedListSteps.getDriver();
-	DS_StackPages stackPages=new DS_StackPages(driver);
+	DS_StackPage stackPages=new DS_StackPage(driver);
 	@Given("User navigates to Stack page using dropdown Data Structure menu")
 	public void user_navigates_to_stack_page_using_dropdown_data_structure_menu() {
 		DS_HomePage homePage=new DS_HomePage(driver);

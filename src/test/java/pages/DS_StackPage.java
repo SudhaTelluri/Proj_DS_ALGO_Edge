@@ -6,9 +6,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DS_StackPages {
+public class DS_StackPage {
 	WebDriver driver;
-	public DS_StackPages(WebDriver driver)
+	public DS_StackPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
