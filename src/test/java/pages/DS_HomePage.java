@@ -41,6 +41,16 @@ public class DS_HomePage {
 
 	@FindBy(xpath="//a[@href=\"/tree\"]")
 	private WebElement tree;
+	
+	@FindBy(xpath="//a[@href=\"/graph\"]")
+	private WebElement graphLink;
+
+	@FindBy(xpath="//*[text()=\"Sign out\"]")
+	private WebElement singoutLink;
+
+	@FindBy(xpath="//*[contains(@class,\"alert alert-primary\")]")
+	private WebElement logoutmsg;
+
 
 	
 	
@@ -103,6 +113,19 @@ public class DS_HomePage {
 		actions.moveToElement(tree).click().build().perform();
 
 	}
+	public void clickOnGraphLink()
+	{
+		graphLink.click();
+	}
+	public void clickOnSingoutLink()
+	{
+		singoutLink.click();
+	}
+	public boolean logOutMessage()
+	{
+		return logoutmsg.isDisplayed();
+	}
+
 
 
 
