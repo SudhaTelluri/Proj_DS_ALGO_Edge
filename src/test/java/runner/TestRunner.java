@@ -13,8 +13,9 @@ import io.cucumber.junit.CucumberOptions;
 plugin= {"pretty",
 		"html:target/CucumberReports/CucumberReport.html",
 		"json:target/CucumberReports/CucumberReport.json",
-		"junit:target/CucumberReports/CucumberReport.xml"
-		
+		"junit:target/CucumberReports/CucumberReport.xml",
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				
 })
 public class TestRunner {
 

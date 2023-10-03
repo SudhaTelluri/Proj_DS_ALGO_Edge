@@ -8,10 +8,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 
 import io.cucumber.java.en.*;
+
 import pages.DS_DataStructurePage;
 import pages.DS_HomePage;
 import pages.DS_LoginPage;
@@ -41,6 +43,8 @@ public class DS_DataStructureSteps {
 	public void user_navigates_to_editor_page() {
 		DS_TryEditor tryEditor=new DS_TryEditor(driver);
 		tryEditor.getEditorTextBox().click();
+		String actual_result=driver.getTitle();
+		Assert.assertEquals(actual_result, "Assessment");
 	    }
 
 	@When("Enters the basic python code in editor and click on run")
