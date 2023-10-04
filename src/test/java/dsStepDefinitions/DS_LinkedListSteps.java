@@ -45,7 +45,6 @@ public class DS_LinkedListSteps {
 	public void user_navigates_to_try_editor_page_by_clicking_introduction_link() throws InterruptedException {
 		linkedListPage.clickonIntroductionLink();
 		linkedListPage.clickOnTryhere();
-		Thread.sleep(3000);
 	}
 
 	@Then("User enters code in tryEditor from sheet {string} and rownumber {int}")
