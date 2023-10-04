@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="153.266" tests="40" skipped="0" failures="0" errors="0">
-<testcase classname="User launch ds application and test Home Page" name="User launch home page of dsalgo project" time="3.409">
+<testsuite name="Cucumber" time="193.998" tests="40" skipped="0" failures="0" errors="0">
+<testcase classname="User launch ds application and test Home Page" name="User launch home page of dsalgo project" time="3.17">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
 Then The user should be redirected to home page.............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Registration page automation" name="User clicks on Register link and provide required fields and click on Register button" time="2.211">
+<testcase classname="Registration page automation" name="User clicks on Register link and provide required fields and click on Register button" time="2.962">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -17,7 +17,7 @@ And User enters required fields and click on Register button................pass
 Then User should login to their account.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Implementing data driven for login functionality" name="User give valid username and password and logged into the application - Example #1.1" time="3.985">
+<testcase classname="Implementing data driven for login functionality" name="User give valid username and password and logged into the application - Example #1.1" time="2.833">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -29,7 +29,7 @@ And clicks on Login button..................................................pass
 Then User should login successfully.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Implementing data driven for login functionality" name="User give valid username and password and logged into the application - Example #1.2" time="5.318">
+<testcase classname="Implementing data driven for login functionality" name="User give valid username and password and logged into the application - Example #1.2" time="2.973">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -41,7 +41,7 @@ And clicks on Login button..................................................pass
 Then User should login successfully.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Implementing data driven for login functionality" name="User give valid username and password and logged into the application - Example #1.3" time="2.481">
+<testcase classname="Implementing data driven for login functionality" name="User give valid username and password and logged into the application - Example #1.3" time="5.701">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -53,7 +53,7 @@ And clicks on Login button..................................................pass
 Then User should login successfully.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Automating data structure introduction page" name="Verifying DataStructure textbox editor with valid Python code" time="3.928">
+<testcase classname="Automating data structure introduction page" name="Verifying DataStructure textbox editor with valid Python code" time="5.7">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -67,7 +67,7 @@ When Enters the basic python code in editor and click on run................pass
 Then Output should print on editor..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Arrays in Python link - Example #1.1" time="3.702">
+<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Arrays in Python link - Example #1.1" time="7.756">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -82,7 +82,7 @@ And User enters valid python code in tryEditor from sheet "Data" and rownumber 1
 Then User should get appropriate output.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Array Using List - Example #1.1" time="3.981">
+<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Array Using List - Example #1.1" time="5.339">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -97,7 +97,7 @@ And User enters Arrays using List python code in tryEditor from sheet "Data" and
 Then User should get appropriate output.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Basic Operations in Lists - Example #1.1" time="4.286">
+<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Basic Operations in Lists - Example #1.1" time="5.244">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -112,7 +112,7 @@ And User enters basic operations of list code in tryEditor from sheet "Data" and
 Then User should get appropriate output.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Applications of Array - Example #1.1" time="3.898">
+<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Applications of Array - Example #1.1" time="5.659">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -127,7 +127,7 @@ And User enters Applications of Array code in tryEditor from sheet "Data" and ro
 Then User should get appropriate output.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Linked List functionalities" name="Testing Introduction link in Linked List - Example #1.1" time="6.762">
+<testcase classname="Verifying Linked List functionalities" name="Testing Introduction link in Linked List - Example #1.1" time="4.804">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -141,7 +141,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Linked List functionalities" name="Testing Creating Linked List link in Linked List - Example #1.1" time="3.682">
+<testcase classname="Verifying Linked List functionalities" name="Testing Creating Linked List link in Linked List - Example #1.1" time="4.822">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -155,7 +155,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Linked List functionalities" name="Testing Types Of LinkedList link in Linked List - Example #1.1" time="5.517">
+<testcase classname="Verifying Linked List functionalities" name="Testing Types Of LinkedList link in Linked List - Example #1.1" time="4.718">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -169,7 +169,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Linked List functionalities" name="Testing Implement LinkedList in Python link in Linked List - Example #1.1" time="3.746">
+<testcase classname="Verifying Linked List functionalities" name="Testing Implement LinkedList in Python link in Linked List - Example #1.1" time="5.082">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -183,7 +183,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Linked List functionalities" name="Testing Traversal link in Linked List - Example #1.1" time="3.543">
+<testcase classname="Verifying Linked List functionalities" name="Testing Traversal link in Linked List - Example #1.1" time="4.584">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -197,7 +197,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Linked List functionalities" name="Testing Insertion link in Linked List - Example #1.1" time="3.713">
+<testcase classname="Verifying Linked List functionalities" name="Testing Insertion link in Linked List - Example #1.1" time="5.419">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -211,7 +211,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Linked List functionalities" name="Testing Deletion link in Linked List - Example #1.1" time="3.722">
+<testcase classname="Verifying Linked List functionalities" name="Testing Deletion link in Linked List - Example #1.1" time="5.134">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -225,7 +225,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Stack functionalities" name="Testing Operations in Stack link of Stack - Example #1.1" time="3.476">
+<testcase classname="Verifying Stack functionalities" name="Testing Operations in Stack link of Stack - Example #1.1" time="4.618">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -239,7 +239,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Stack functionalities" name="Testing Creating Implementation link in Stack - Example #1.1" time="3.532">
+<testcase classname="Verifying Stack functionalities" name="Testing Creating Implementation link in Stack - Example #1.1" time="4.459">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -253,7 +253,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Stack functionalities" name="Testing Applications in Stack - Example #1.1" time="3.393">
+<testcase classname="Verifying Stack functionalities" name="Testing Applications in Stack - Example #1.1" time="4.715">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -267,7 +267,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Queue functionalities" name="Testing Operations in Implementation of Queue in Python link of Queue - Example #1.1" time="3.519">
+<testcase classname="Verifying Queue functionalities" name="Testing Operations in Implementation of Queue in Python link of Queue - Example #1.1" time="4.324">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -281,7 +281,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Queue functionalities" name="Testing Creating Implementationusingcollectionsdeque in Queue - Example #1.1" time="3.569">
+<testcase classname="Verifying Queue functionalities" name="Testing Creating Implementationusingcollectionsdeque in Queue - Example #1.1" time="4.784">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -295,7 +295,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Queue functionalities" name="Testing Implementationusingarray in Queue - Example #1.1" time="3.574">
+<testcase classname="Verifying Queue functionalities" name="Testing Implementationusingarray in Queue - Example #1.1" time="4.764">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -309,7 +309,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Queue functionalities" name="Testing QueueOperations in Queue - Example #1.1" time="3.459">
+<testcase classname="Verifying Queue functionalities" name="Testing QueueOperations in Queue - Example #1.1" time="4.844">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -323,7 +323,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing OverviewofTrees - Example #1.1" time="3.551">
+<testcase classname="Verifying Tree functionalities" name="Testing OverviewofTrees - Example #1.1" time="5.183">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -337,7 +337,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing Terminologies link in Tree - Example #1.1" time="3.526">
+<testcase classname="Verifying Tree functionalities" name="Testing Terminologies link in Tree - Example #1.1" time="5.013">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -351,7 +351,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing TypesofTrees in Tree - Example #1.1" time="3.563">
+<testcase classname="Verifying Tree functionalities" name="Testing TypesofTrees in Tree - Example #1.1" time="4.698">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -365,7 +365,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing TreeTraversals in Tree - Example #1.1" time="3.634">
+<testcase classname="Verifying Tree functionalities" name="Testing TreeTraversals in Tree - Example #1.1" time="5.165">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -379,7 +379,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing TraversalsIllustration in Tree - Example #1.1" time="3.749">
+<testcase classname="Verifying Tree functionalities" name="Testing TraversalsIllustration in Tree - Example #1.1" time="4.947">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -393,7 +393,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing BinaryTrees in Tree - Example #1.1" time="3.757">
+<testcase classname="Verifying Tree functionalities" name="Testing BinaryTrees in Tree - Example #1.1" time="4.68">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -407,7 +407,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing TypesofBinaryTrees in Tree - Example #1.1" time="3.659">
+<testcase classname="Verifying Tree functionalities" name="Testing TypesofBinaryTrees in Tree - Example #1.1" time="7.161">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -421,7 +421,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing ImplementationinPython in Tree - Example #1.1" time="3.638">
+<testcase classname="Verifying Tree functionalities" name="Testing ImplementationinPython in Tree - Example #1.1" time="4.612">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -435,7 +435,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing BinaryTreeTraversals in Tree - Example #1.1" time="3.593">
+<testcase classname="Verifying Tree functionalities" name="Testing BinaryTreeTraversals in Tree - Example #1.1" time="4.543">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -449,7 +449,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing ImplementationofBinaryTrees in Tree - Example #1.1" time="3.891">
+<testcase classname="Verifying Tree functionalities" name="Testing ImplementationofBinaryTrees in Tree - Example #1.1" time="4.449">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -463,7 +463,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing ApplicationsofBinaryTrees in Tree - Example #1.1" time="3.906">
+<testcase classname="Verifying Tree functionalities" name="Testing ApplicationsofBinaryTrees in Tree - Example #1.1" time="4.202">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -477,7 +477,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing BinarySearchTrees in Tree - Example #1.1" time="3.823">
+<testcase classname="Verifying Tree functionalities" name="Testing BinarySearchTrees in Tree - Example #1.1" time="7.372">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -491,7 +491,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Tree functionalities" name="Testing ImplementationofBST in Tree - Example #1.1" time="3.666">
+<testcase classname="Verifying Tree functionalities" name="Testing ImplementationofBST in Tree - Example #1.1" time="4.553">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -505,7 +505,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Graph functionalities" name="Testing Graph - Example #1.1" time="6.472">
+<testcase classname="Verifying Graph functionalities" name="Testing Graph - Example #1.1" time="4.538">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -519,7 +519,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verifying Graph functionalities" name="Testing GraphRepresentations - Example #1.1" time="3.477">
+<testcase classname="Verifying Graph functionalities" name="Testing GraphRepresentations - Example #1.1" time="4.623">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
@@ -533,7 +533,7 @@ And User click on Run.......................................................pass
 And User should get the output..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Automating Signout functionalities" name="Verifying Signout link" time="2.37">
+<testcase classname="Automating Signout functionalities" name="Verifying Signout link" time="3.093">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
