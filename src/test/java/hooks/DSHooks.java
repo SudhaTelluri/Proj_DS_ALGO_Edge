@@ -43,24 +43,15 @@ public  void setUp(Scenario scenario)
 }
 //after hook run after each scenario
 
-	public String getScreenshot(String testcaseName, WebDriver driver) throws IOException {
-        TakesScreenshot ts = (TakesScreenshot) this.driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        File file = new File(System.getProperty("user.dir")+ "//reports//"+ testcaseName+".png");
-        FileUtils.copyFile(source,file);
-        return System.getProperty("user.dir")+ "//reports//"+ testcaseName+".png";
-    }
-
-
-
-
-
-
-
-
 @After
 public void tearDown(Scenario scenario)
 {	
+	String scenarioName=scenario.getName().replaceAll(" ", "_");
+	if(scenario.isFailed())
+	{
+		byte[] sourcescreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+		scenario.attach(sourcescreenshot, "img/png", scenarioName);		
+	}
 driver.quit();
 System.out.println("***Execution ends for scenario "+scenario.getName());
 }

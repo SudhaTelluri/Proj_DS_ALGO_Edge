@@ -43,6 +43,9 @@ public class DS_LinkedListPage {
 	WebElement insertionlink;
 	@FindBy(xpath="//*[text()=\"Deletion\"]")
 	WebElement deletionlink;
+	@FindBy(xpath="//div[contains(@class,\"CodeMirror cm-s-default\")]")
+	private WebElement editortextbox;
+
 	
 	
 	public void clickonDropdownLinkedList() {
@@ -59,14 +62,24 @@ public class DS_LinkedListPage {
 		actions.moveToElement(tryhere).click().build().perform();
 		
 	}
-	public void enterPythonCode(String sheetName,int rowNum) throws InvalidFormatException, IOException
-	{
-		DS_TryEditor tryEditor=new DS_TryEditor(driver);
+//	public void enterPythonCode(String sheetName,int rowNum) throws InvalidFormatException, IOException
+//	{
+//		DS_TryEditor tryEditor=new DS_TryEditor(driver);
+//		Actions actions=new Actions(driver);
+//		
+//		String code=excelElements.getCodefromExcel(sheetName, rowNum);
+//		actions.sendKeys(tryEditor.getEditorTextBox(), code).build().perform();
+//	}
+	
+	public DS_LinkedListPage enterCodeInTryEditor(String code) {
 		Actions actions=new Actions(driver);
-		
-		String code=excelElements.getCodefromExcel(sheetName, rowNum);
-		actions.sendKeys(tryEditor.getEditorTextBox(), code).build().perform();
-	}
+		//editortextbox.sendKeys(code);
+		actions.sendKeys(editortextbox, code).build().perform();
+		return this;
+			}
+	
+	
+	
 	public void clickOnCreatingLinkedListlink()
 	{
 		creatingLinkedListlink.click();

@@ -18,16 +18,16 @@ import factory.DriverFactory;
 
 public class ExcelElements {
 	public static WebDriver driver = DriverFactory.getDriver();;
-	String Excelpath = "C:\\Users\\sudha\\OneDrive\\Documents\\GitHub\\Projects\\Proj-DS-ALGO\\src\\test\\resources\\exceldata\\xldata.xlsx";
-	String code;
-	String result;
+	static String Excelpath = "C:\\Users\\sudha\\OneDrive\\Documents\\GitHub\\Projects\\Proj-DS-ALGO\\src\\test\\resources\\exceldata\\xldata.xlsx";
+	static String code;
+	static String result;
 
 	public void waitForElement(WebElement element) {
 		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(element));
 
 	}
 
-	public String getCodefromExcel(String sheetname, int rownumber) throws InvalidFormatException, IOException {
+	public static String getCodefromExcel(String sheetname, int rownumber) throws InvalidFormatException, IOException {
 		ExcelReader reader = new ExcelReader();
 		List<Map<String, String>> testdata = reader.getData(Excelpath, sheetname);
 		code = testdata.get(rownumber).get("pythonCode");

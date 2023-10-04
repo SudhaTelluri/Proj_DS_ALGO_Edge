@@ -4,10 +4,12 @@ import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="C:\\Users\\sudha\\OneDrive\\Documents\\GitHub\\Projects\\Proj-DS-ALGO\\src\\test\\resources\\dsfeatures",
                   glue={"dsStepDefinitions","hooks"},
+                  publish=true,
                   monochrome=true,
                   tags="@all",
 plugin= {"pretty",
@@ -17,6 +19,6 @@ plugin= {"pretty",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				
 })
-public class TestRunner {
+public class TestRunner{
 
 }

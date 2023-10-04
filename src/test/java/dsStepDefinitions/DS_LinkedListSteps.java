@@ -1,6 +1,8 @@
 package dsStepDefinitions;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -16,6 +18,8 @@ import pages.DS_HomePage;
 import pages.DS_LinkedListPage;
 import pages.DS_LoginPage;
 import pages.DS_TryEditor;
+import utilities.ExcelElements;
+import utilities.ExcelReader;
 
 public class DS_LinkedListSteps {
 	DS_DataStructureSteps dataStructureSteps = new DS_DataStructureSteps();
@@ -38,16 +42,17 @@ public class DS_LinkedListSteps {
 	}
 
 	@When("User navigates to tryEditor page by clicking introduction link")
-	public void user_navigates_to_try_editor_page_by_clicking_introduction_link() {
+	public void user_navigates_to_try_editor_page_by_clicking_introduction_link() throws InterruptedException {
 		linkedListPage.clickonIntroductionLink();
 		linkedListPage.clickOnTryhere();
+		Thread.sleep(3000);
 	}
 
 	@Then("User enters code in tryEditor from sheet {string} and rownumber {int}")
 	public void user_enters_code_in_try_editor_from_sheet_and_rownumber(String sheetName, Integer rowNum)
-			throws InvalidFormatException, IOException {
-
-		linkedListPage.enterPythonCode(sheetName, rowNum);
+			throws InvalidFormatException, IOException, InterruptedException {
+		String code=ExcelElements.getCodefromExcel(sheetName, rowNum);
+		linkedListPage.enterCodeInTryEditor(code);
 	}
 
 	@Then("User click on Run")
@@ -74,34 +79,34 @@ public class DS_LinkedListSteps {
 		linkedListPage.clickOnTypesOfLinkedListlinklink();
 		linkedListPage.clickOnTryhere();
 	}
+
 	@When("User navigates to tryEditor page by clicking Implement Linked List in Python link")
 	public void user_navigates_to_try_editor_page_by_clicking_implement_linked_list_in_python_link() {
 		linkedListPage.clickOnImplementLinkedListInPythonlinklink();
 		linkedListPage.clickOnTryhere();
-	   	}
+	}
+
 	@When("User navigates to tryEditor page by clicking Traversal link")
 	public void user_navigates_to_try_editor_page_by_clicking_traversal_link() {
 		linkedListPage.clickOnTraversallink();
 		linkedListPage.clickOnTryhere();
-	    	}
+	}
 
 	@When("User navigates to tryEditor page by clicking Insertion link")
 	public void user_navigates_to_try_editor_page_by_clicking_insertion_link() {
 		linkedListPage.clickOninsertionlink();
 		linkedListPage.clickOnTryhere();
-		}
+	}
 
 	@When("User navigates to tryEditor page by clicking Deletion link")
 	public void user_navigates_to_try_editor_page_by_clicking_deletion_link() {
 		linkedListPage.clickOndeletionlink();
 		linkedListPage.clickOnTryhere();
-		}
+	}
 
+	public WebDriver getDriver() {
+		return driver;
 
-public WebDriver getDriver()
-{
-	return driver;
-	
-}
+	}
 
 }
