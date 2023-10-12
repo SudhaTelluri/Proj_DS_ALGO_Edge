@@ -4,7 +4,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features="C:\\Users\\sudha\\OneDrive\\Documents\\GitHub\\Projects\\Proj-DS-ALGO\\src\\test\\resources\\dsfeatures",
+		features="src\\test\\resources\\dsfeatures",
+		//features="src\\test\\resources\\dsfeatures\\Test01_ds_GetStarted.feature",
 		glue={"dsStepDefinitions","hooks"},
 		tags="@all",
 		plugin= {"pretty",

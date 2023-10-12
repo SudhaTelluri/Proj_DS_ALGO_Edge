@@ -1,4 +1,4 @@
-@DSIntro @all
+	@DSIntro @all
 Feature: Automating data structure introduction page
 
   Background: follow till login page

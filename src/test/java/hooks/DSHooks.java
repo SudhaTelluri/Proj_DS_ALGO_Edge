@@ -2,6 +2,7 @@ package hooks;
 
 
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
@@ -50,7 +51,8 @@ public void tearDown(Scenario scenario)
 	if(scenario.isFailed())
 	{
 		byte[] sourcescreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-		scenario.attach(sourcescreenshot, "img/png", scenarioName);		
+		scenario.attach(sourcescreenshot, "img/png", scenarioName);
+		Allure.addAttachment("Failed Screenshot", new ByteArrayInputStream(sourcescreenshot));
 	}
 driver.quit();
 System.out.println("***Execution ends for scenario "+scenario.getName());
