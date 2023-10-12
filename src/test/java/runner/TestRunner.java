@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:\\Users\\sudha\\OneDrive\\Documents\\GitHub\\Projects\\Proj-DS-ALGO\\src\\test\\resources\\dsfeatures",
+@CucumberOptions(features="src\\test\\resources\\dsfeatures",
                   glue={"dsStepDefinitions","hooks"},
                   publish=true,
                   monochrome=true,
