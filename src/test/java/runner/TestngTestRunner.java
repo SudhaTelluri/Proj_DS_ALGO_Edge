@@ -12,6 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 				"html:testngtarget/CucumberReports/CucumberReport.html",
 				"json:testngtarget/CucumberReports/CucumberReport.json",
 				"junit:testngtarget/CucumberReports/CucumberReport.xml",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 				
 		}
