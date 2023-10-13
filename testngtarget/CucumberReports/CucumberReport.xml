@@ -1,10 +1,548 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="5.453" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="User launch ds application and test Home Page" name="User launch home page of dsalgo project" time="5.279">
+<testsuite name="Cucumber" time="197.688" tests="40" skipped="0" failures="0" errors="0">
+<testcase classname="User launch ds application and test Home Page" name="User launch home page of dsalgo project" time="5.193">
 <system-out><![CDATA[
 Given The user enters DS Algo portal link...................................passed
 When The user clicks the Get Started button.................................passed
 Then The user should be redirected to home page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration page automation" name="User clicks on Register link and provide required fields and click on Register button" time="2.944">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+When User click on Register link............................................passed
+And User enters required fields and click on Register button................passed
+Then User should login to their account.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Implementing data driven for login functionality" name="User give valid username and password and logged into the application - Example #1.1" time="2.6">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User enters valid Username Sudhasdet128................................passed
+And Enters valid Password Bittar2$..........................................passed
+And clicks on Login button..................................................passed
+Then User should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Implementing data driven for login functionality" name="User give valid username and password and logged into the application - Example #1.2" time="2.542">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User enters valid Username sudha.......................................passed
+And Enters valid Password bittar2$..........................................passed
+And clicks on Login button..................................................passed
+Then User should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Implementing data driven for login functionality" name="User give valid username and password and logged into the application - Example #1.3" time="5.523">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User enters valid Username HardWork....................................passed
+And Enters valid Password Pays1234..........................................passed
+And clicks on Login button..................................................passed
+Then User should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automating data structure introduction page" name="Verifying DataStructure textbox editor with valid Python code" time="5.277">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User enters valid Username, password and click on Login button.........passed
+Then User should login successfully.........................................passed
+When User clicks on Get Started link of DataStructures intro page...........passed
+Then User navigates to editor page..........................................passed
+When Enters the basic python code in editor and click on run................passed
+Then Output should print on editor..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Arrays in Python link - Example #1.1" time="6.002">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User enters valid Username, password and click on Login button.........passed
+Then User should login successfully.........................................passed
+Given User navigates to Arrays page by using dropdown menu in Home Page.....passed
+When User click on Arrays in Python link....................................passed
+And User navigates to tryeditor page........................................passed
+And User enters valid python code in tryEditor from sheet "Data" and rownumber 1.passed
+Then User should get appropriate output.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Array Using List - Example #1.1" time="5.545">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User enters valid Username, password and click on Login button.........passed
+Then User should login successfully.........................................passed
+Given User navigates to Arrays page by using dropdown menu in Home Page.....passed
+When User click on Arrays Using List link...................................passed
+And User navigates to tryeditor page........................................passed
+And User enters Arrays using List python code in tryEditor from sheet "Data" and rownumber 2.passed
+Then User should get appropriate output.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Basic Operations in Lists - Example #1.1" time="5.417">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User enters valid Username, password and click on Login button.........passed
+Then User should login successfully.........................................passed
+Given User navigates to Arrays page by using dropdown menu in Home Page.....passed
+When User click on Basic Operations in Lists................................passed
+And User navigates to tryeditor page........................................passed
+And User enters basic operations of list code in tryEditor from sheet "Data" and rownumber 3.passed
+Then User should get appropriate output.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying the Array functionalities" name="Checking the functionality of Applications of Array - Example #1.1" time="5.433">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User enters valid Username, password and click on Login button.........passed
+Then User should login successfully.........................................passed
+Given User navigates to Arrays page by using dropdown menu in Home Page.....passed
+When User click on Applications of Array link...............................passed
+And User navigates to tryeditor page........................................passed
+And User enters Applications of Array code in tryEditor from sheet "Data" and rownumber 4.passed
+Then User should get appropriate output.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Linked List functionalities" name="Testing Introduction link in Linked List - Example #1.1" time="5.474">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to LinkedList page using dropdown Data Structure menu..passed
+When User navigates to tryEditor page by clicking introduction link.........passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 5........passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Linked List functionalities" name="Testing Creating Linked List link in Linked List - Example #1.1" time="5.043">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to LinkedList page using dropdown Data Structure menu..passed
+When User navigates to tryEditor page by clicking Created Linked List link..passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 6........passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Linked List functionalities" name="Testing Types Of LinkedList link in Linked List - Example #1.1" time="4.897">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to LinkedList page using dropdown Data Structure menu..passed
+When User navigates to tryEditor page by clicking Types of Linked List link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 7........passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Linked List functionalities" name="Testing Implement LinkedList in Python link in Linked List - Example #1.1" time="4.804">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to LinkedList page using dropdown Data Structure menu..passed
+When User navigates to tryEditor page by clicking Implement Linked List in Python link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 8........passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Linked List functionalities" name="Testing Traversal link in Linked List - Example #1.1" time="4.965">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to LinkedList page using dropdown Data Structure menu..passed
+When User navigates to tryEditor page by clicking Traversal link............passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 9........passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Linked List functionalities" name="Testing Insertion link in Linked List - Example #1.1" time="5.405">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to LinkedList page using dropdown Data Structure menu..passed
+When User navigates to tryEditor page by clicking Insertion link............passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 10.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Linked List functionalities" name="Testing Deletion link in Linked List - Example #1.1" time="5.085">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to LinkedList page using dropdown Data Structure menu..passed
+When User navigates to tryEditor page by clicking Deletion link.............passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 11.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Stack functionalities" name="Testing Operations in Stack link of Stack - Example #1.1" time="4.82">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Stack page using dropdown Data Structure menu.......passed
+When User navigates to tryEditor page by clicking Operations in Stack link..passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 12.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Stack functionalities" name="Testing Creating Implementation link in Stack - Example #1.1" time="4.64">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Stack page using dropdown Data Structure menu.......passed
+When User navigates to tryEditor page by clicking Implementation link.......passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 13.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Stack functionalities" name="Testing Applications in Stack - Example #1.1" time="5.041">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Stack page using dropdown Data Structure menu.......passed
+When User navigates to tryEditor page by clicking Applications link.........passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 14.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Queue functionalities" name="Testing Operations in Implementation of Queue in Python link of Queue - Example #1.1" time="5.282">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Queue page using dropdown Data Structure menu.......passed
+When User navigates to tryEditor page by clicking Implementation of Queue in Python link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 15.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Queue functionalities" name="Testing Creating Implementationusingcollectionsdeque in Queue - Example #1.1" time="4.942">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Queue page using dropdown Data Structure menu.......passed
+When User navigates to tryEditor page by clicking Implementationusingcollectionsdeque link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 16.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Queue functionalities" name="Testing Implementationusingarray in Queue - Example #1.1" time="4.654">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Queue page using dropdown Data Structure menu.......passed
+When User navigates to tryEditor page by clicking Implementationusingarray link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 17.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Queue functionalities" name="Testing QueueOperations in Queue - Example #1.1" time="4.942">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Queue page using dropdown Data Structure menu.......passed
+When User navigates to tryEditor page by clicking QueueOperations link......passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 18.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing OverviewofTrees - Example #1.1" time="4.978">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking OverviewofTrees link in Tree.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 19.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing Terminologies link in Tree - Example #1.1" time="4.777">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking Terminologies link........passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 20.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing TypesofTrees in Tree - Example #1.1" time="6.824">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking TypesofTrees link.........passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 21.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing TreeTraversals in Tree - Example #1.1" time="4.818">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking TreeTraversals link.......passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 22.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing TraversalsIllustration in Tree - Example #1.1" time="4.909">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking TraversalsIllustration link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 23.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing BinaryTrees in Tree - Example #1.1" time="7.144">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking BinaryTrees link..........passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 24.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing TypesofBinaryTrees in Tree - Example #1.1" time="5.132">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking TypesofBinaryTrees link...passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 25.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing ImplementationinPython in Tree - Example #1.1" time="5.074">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking ImplementationinPython link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 26.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing BinaryTreeTraversals in Tree - Example #1.1" time="4.71">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking BinaryTreeTraversals link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 27.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing ImplementationofBinaryTrees in Tree - Example #1.1" time="5.11">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking ImplementationofBinaryTrees link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 28.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing ApplicationsofBinaryTrees in Tree - Example #1.1" time="4.589">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking ApplicationsofBinaryTrees link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 29.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing BinarySearchTrees in Tree - Example #1.1" time="4.807">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking BinarySearchTrees link....passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 30.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Tree functionalities" name="Testing ImplementationofBST in Tree - Example #1.1" time="4.943">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Tree page using dropdown Data Structure menu........passed
+When User navigates to tryEditor page by clicking ImplementationofBST link..passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 31.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Graph functionalities" name="Testing Graph - Example #1.1" time="4.366">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Graph page using dropdown Data Structure menu.......passed
+When User navigates to tryEditor page by clicking Graph.....................passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 32.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying Graph functionalities" name="Testing GraphRepresentations - Example #1.1" time="5.038">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User login to the application..........................................passed
+Given User navigates to Graph page using dropdown Data Structure menu.......passed
+When User navigates to tryEditor page by clicking GraphRepresentations link.passed
+Then User enters code in tryEditor from sheet "Data" and rownumber 33.......passed
+And User click on Run.......................................................passed
+And User should get the output..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automating Signout functionalities" name="Verifying Signout link" time="3.179">
+<system-out><![CDATA[
+Given The user enters DS Algo portal link...................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to home page.............................passed
+Then User click on Sign in link.............................................passed
+When User enters valid Username, password and click on Login button.........passed
+Then User should login successfully.........................................passed
+When User clicks on signout link............................................passed
+Then User should logout successfully........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -11,8 +11,8 @@ import io.cucumber.testng.CucumberOptions;
 		plugin= {"pretty",
 				"html:testngtarget/CucumberReports/CucumberReport.html",
 				"json:testngtarget/CucumberReports/CucumberReport.json",
-				"junit:testngtarget/CucumberReports/CucumberReport.xml"
-				
+				"junit:testngtarget/CucumberReports/CucumberReport.xml",
+				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 				
 		}
 		)

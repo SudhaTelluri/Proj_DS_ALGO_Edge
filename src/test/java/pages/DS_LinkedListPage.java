@@ -71,13 +71,13 @@ public class DS_LinkedListPage {
 //		actions.sendKeys(tryEditor.getEditorTextBox(), code).build().perform();
 //	}
 	
-	public DS_LinkedListPage enterCodeInTryEditor(String code) {
+	public DS_LinkedListPage  enterCodeInTryEditor(String code) {
 		Actions actions=new Actions(driver);
 		//editortextbox.sendKeys(code);
 		actions.sendKeys(editortextbox, code).build().perform();
 		return this;
 			}
-	
+
 	
 	
 	public void clickOnCreatingLinkedListlink()
