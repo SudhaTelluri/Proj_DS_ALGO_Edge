@@ -10,7 +10,7 @@ import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import io.cucumber.java.en.*;
 import pages.DS_ArrayPage;
 import pages.DS_HomePage;
-import pages.DS_TryEditor;
+import pages.DS_TryEditorPage;
 import utilities.ExcelElements;
 
 public class DS_ArraySteps {
@@ -51,7 +51,7 @@ public class DS_ArraySteps {
 
 	@Then("User should get appropriate output")
 	public void user_should_get_appropriate_output() {
-		DS_TryEditor tryEditor = new DS_TryEditor(driver);
+		DS_TryEditorPage tryEditor = new DS_TryEditorPage(driver);
 		tryEditor.clickOnRunButton();
 		String output = tryEditor.getTextFromOutput();
 		System.out.println("<<<<<<<<<<<<<<<Arrays in Python link code output>>>>>>>> :" + output);
@@ -74,24 +74,41 @@ public class DS_ArraySteps {
 	@When("User click on Basic Operations in Lists")
 	public void user_click_on_basic_operations_in_lists() {
 		arrayPage.clickOnBasicOperationsInLists();
-			}
+	}
 
 	@When("User enters basic operations of list code in tryEditor from sheet {string} and rownumber {int}")
 	public void user_enters_basic_operations_of_list_code_in_try_editor_from_sheet_and_rownumber(String sheetName,
 			Integer rowNum) throws InvalidFormatException, IOException {
 		arrayPage.enterPythonCode(sheetName, rowNum);
-			}
+	}
+
 	@When("User click on Applications of Array link")
 	public void user_click_on_applications_of_array_link() {
 		arrayPage.clickOnApplicationsofArray();
-	    	}
+	}
 
 	@When("User enters Applications of Array code in tryEditor from sheet {string} and rownumber {int}")
-	public void user_enters_applications_of_array_code_in_try_editor_from_sheet_and_rownumber(String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
+	public void user_enters_applications_of_array_code_in_try_editor_from_sheet_and_rownumber(String sheetName,
+			Integer rowNum) throws InvalidFormatException, IOException {
 		arrayPage.enterPythonCode(sheetName, rowNum);
-	    	}
+	}
 
+	@When("User enters Arrays using List invalid python code in tryEditor from sheet {string} and rownumber {int}")
+	public void user_enters_arrays_using_list_invalid_python_code_in_try_editor_from_sheet_and_rownumber(
+			String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
+		arrayPage.enterPythonCode(sheetName, rowNum);
+	}
 
+	@When("User enters basic operations of list invalid code in tryEditor from sheet {string} and rownumber {int}")
+	public void user_enters_basic_operations_of_list_invalid_code_in_try_editor_from_sheet_and_rownumber(
+			String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
+		arrayPage.enterPythonCode(sheetName, rowNum);
+	}
 
+	@When("User enters Applications of Array invalid code in tryEditor from sheet {string} and rownumber {int}")
+	public void user_enters_applications_of_array_invalid_code_in_try_editor_from_sheet_and_rownumber(String sheetName,
+			Integer rowNum) throws InvalidFormatException, IOException {
+		arrayPage.enterPythonCode(sheetName, rowNum);
+	}
 
 }

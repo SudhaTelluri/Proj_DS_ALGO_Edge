@@ -1,7 +1,11 @@
 package dsStepDefinitions;
 
-import org.openqa.selenium.WebDriver;
+import java.util.Map;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.DS_HomePage;
@@ -34,10 +38,43 @@ public class DS_RegisterSteps {
 		registerPage.register();
 
 	    }
+	
+	@When("User doesn't enter any details into fields and click on Register button")
+	public void user_doesn_t_enter_any_details_into_fields_and_click_on_register_button() {
+		DS_RegisterPage registerPage = new DS_RegisterPage(driver); 
+		registerPage.ClickOnregisterbutton();
+	}
+
+	@Then("User should get proper warning message")
+	public void user_should_get_proper_warning_message() {
+		System.out.println("<<<<<Please fill out this field>>>>>");
+	    	}
+
+	@When("User enters details into below fields")
+	public void user_enters_details_into_below_fields(DataTable dataTable) {
+		Map<String, String> dataMap = dataTable.asMap(String.class, String.class);
+		DS_RegisterPage registerPage = new DS_RegisterPage(driver);
+		registerPage.getUsernameField().sendKeys(dataMap.get("Username"));
+		registerPage.getPasswordField().sendKeys(dataMap.get("Password"));
+		registerPage.getConfirmPasswordField().sendKeys(dataMap.get("Password Confirmation"));
+	    	}
+
+	@When("User clicks on register button")
+	public void user_clicks_on_register_button() {
+		DS_RegisterPage registerPage = new DS_RegisterPage(driver);
+		registerPage.ClickOnregisterbutton();
+	    	}
+
+	@Then("User should get error message")
+	public void user_should_get_error_message() {
+		DS_RegisterPage registerPage = new DS_RegisterPage(driver);
+		String expectedMessage="password_mismatch:The two password fields didn’t match.";
+		String actualMessage=registerPage.getAlertMessage();
+		Assert.assertEquals(actualMessage, expectedMessage);
+	    	}
+
 public WebDriver getDriver(){
 		return driver;
 	}
-
-
 
 }

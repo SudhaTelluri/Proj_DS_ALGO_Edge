@@ -17,7 +17,7 @@ import pages.DS_ArrayPage;
 import pages.DS_HomePage;
 import pages.DS_LinkedListPage;
 import pages.DS_LoginPage;
-import pages.DS_TryEditor;
+import pages.DS_TryEditorPage;
 import utilities.ExcelElements;
 import utilities.ExcelReader;
 
@@ -56,13 +56,13 @@ public class DS_LinkedListSteps {
 
 	@Then("User click on Run")
 	public void user_click_on_run() {
-		DS_TryEditor tryEditor = new DS_TryEditor(driver);
+		DS_TryEditorPage tryEditor = new DS_TryEditorPage(driver);
 		tryEditor.clickOnRunButton();
 	}
 
 	@Then("User should get the output")
 	public void user_should_get_the_output() {
-		DS_TryEditor tryEditor = new DS_TryEditor(driver);
+		DS_TryEditorPage tryEditor = new DS_TryEditorPage(driver);
 		String output = tryEditor.getTextFromOutput();
 		System.out.println("<<<<<<<<<<<<<<<Arrays in Python link code output>>>>>>>> :" + output);
 	}

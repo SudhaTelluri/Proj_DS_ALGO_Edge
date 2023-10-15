@@ -26,6 +26,9 @@ public class DS_LoginPage {
 
 	@FindBy(xpath = "//*[@value=\"Login\"]")
 	WebElement loginbutton;
+	@FindBy(xpath = "//div[@class=\"container\"]/following-sibling::div")
+	WebElement warningmessage;
+
 
 	public WebElement getUsername() {
 		return username;
@@ -61,5 +64,10 @@ public class DS_LoginPage {
 		username.sendKeys(uname);
 		//password.clear();
 		password.sendKeys(pwd);
+	}
+	
+	public String getWarningMessage()
+	{
+		return warningmessage.getText();	
 	}
 }

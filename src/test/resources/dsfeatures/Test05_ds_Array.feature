@@ -53,3 +53,36 @@ Feature: Verifying the Array functionalities
     Examples: 
       | Sheetname | Rownumber |
       | Data      |         4 |
+
+  @TS_Array_05 @ArraysUsingList @all @smoke
+  Scenario Outline: Checking the functionality of Array Using List
+    When User click on Arrays Using List link
+    And User navigates to tryeditor page
+    And User enters Arrays using List invalid python code in tryEditor from sheet "<Sheetname>" and rownumber <Rownumber>
+    Then User should get appropriate output
+
+    Examples: 
+      | Sheetname | Rownumber |
+      | Data      |        34 |
+
+  @TS_Array_06 @BasicOperationsInLists @all @smoke
+  Scenario Outline: Checking the functionality of Basic Operations in Lists
+    When User click on Basic Operations in Lists
+    And User navigates to tryeditor page
+    And User enters basic operations of list invalid code in tryEditor from sheet "<Sheetname>" and rownumber <Rownumber>
+    Then User should get appropriate output
+
+    Examples: 
+      | Sheetname | Rownumber |
+      | Data      |        34 |
+
+  @TS_Array_07 @ApplicationsOfArray @all @smoke @TS_Array_03 @BasicOperationsInLists @all @smoke
+  Scenario Outline: Checking the functionality of Applications of Array
+    When User click on Applications of Array link
+    And User navigates to tryeditor page
+    And User enters Applications of Array invalid code in tryEditor from sheet "<Sheetname>" and rownumber <Rownumber>
+    Then User should get appropriate output
+
+    Examples: 
+      | Sheetname | Rownumber |
+      | Data      |        34 |

@@ -29,6 +29,9 @@ public class DS_RegisterPage {
 	@FindBy(linkText="Login ")
 	WebElement loginlink;
 	
+	@FindBy(xpath="//div[contains(@class,\"alert alert-primary\")]")
+	WebElement alertMessage;
+	
 	public void clickOnLoginlink()
 	{
 		Actions actions=new Actions(driver);
@@ -48,6 +51,31 @@ public class DS_RegisterPage {
 		password2.sendKeys(var2);
 		register.click();
 	}
+
+	public void ClickOnregisterbutton()
+	{
+		register.click();
+	}
+	
+	public WebElement getUsernameField()
+	{
+		return username;
+	}
+	public WebElement getPasswordField()
+	{
+		return password;
+	}
+	public WebElement getConfirmPasswordField()
+	{
+		return password2;
+	}
+	
+	public String getAlertMessage()
+	{
+		return alertMessage.getText();
+	}
+	
+	
 
 
 

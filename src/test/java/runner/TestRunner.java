@@ -7,12 +7,12 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
-//@CucumberOptions(features="src\\test\\resources\\dsfeatures",
-@CucumberOptions(features="src\\test\\resources\\dsfeatures\\Test01_ds_GetStarted.feature",
+@CucumberOptions(features="src\\test\\resources\\dsfeatures",
+//@CucumberOptions(features="src\\test\\resources\\dsfeatures\\Test01_ds_GetStarted.feature",
                   glue={"dsStepDefinitions","hooks"},
                   publish=true,
                   monochrome=true,
-                  tags="@TS_GetStarted_01",
+                  tags="@TS_Array_01 or @TS_Array_02",
 plugin= {"pretty",
 		"html:target/CucumberReports/CucumberReport.html",
 		"json:target/CucumberReports/CucumberReport.json",

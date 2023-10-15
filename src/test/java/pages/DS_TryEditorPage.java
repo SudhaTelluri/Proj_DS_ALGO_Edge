@@ -10,9 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.ExcelElements;
 
-public class DS_TryEditor {
+public class DS_TryEditorPage {
 	WebDriver driver;
-	public DS_TryEditor(WebDriver driver)
+	public DS_TryEditorPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);

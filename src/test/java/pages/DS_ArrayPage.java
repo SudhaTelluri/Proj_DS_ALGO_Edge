@@ -47,7 +47,7 @@ public WebElement getTryhere()
 }
 public void enterPythonCode(String sheetName,int rowNum) throws InvalidFormatException, IOException
 {
-	DS_TryEditor tryEditor=new DS_TryEditor(driver);
+	DS_TryEditorPage tryEditor=new DS_TryEditorPage(driver);
 	Actions actions=new Actions(driver);
 	
 	String code=excelElements.getCodefromExcel(sheetName, rowNum);
