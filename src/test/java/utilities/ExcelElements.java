@@ -29,42 +29,11 @@ public class ExcelElements {
 
 	public static String getCodefromExcel(String sheetname, int rownumber) throws InvalidFormatException, IOException {
 		ExcelReader reader = new ExcelReader();
+		// TO preserve the order of the data from excel we use list in combination with map
 		List<Map<String, String>> testdata = reader.getData(Excelpath, sheetname);
 		code = testdata.get(rownumber).get("pythonCode");
-		result = testdata.get(rownumber).get("Result");
+		//result = testdata.get(rownumber).get("Result");
 		return code;
 	}
-
-	public void enterCode(String code, WebElement element) {
-
-		new Actions(driver).sendKeys(element, code).perform();
-	}
-
-	public void enterCodePractice(String code, WebElement element) {
-		new Actions(driver).keyDown(Keys.COMMAND).sendKeys("a").sendKeys(Keys.DELETE).keyUp(Keys.COMMAND).perform();
-		String[] str1 = code.split("\n");
-		for (int i = 0; i < str1.length; i++) {
-			if (str1[i].equalsIgnoreCase("\\b")) {
-				element.sendKeys(Keys.BACK_SPACE);
-			} else {
-				element.sendKeys(str1[i]);
-				element.sendKeys(Keys.RETURN);
-			}
-		}
-	}
-
-	public String getResultfromExcel(String sheetname, int rownumber) throws InvalidFormatException, IOException {
-		ExcelReader reader = new ExcelReader();
-		List<Map<String, String>> testdata = reader.getData(Excelpath, sheetname);
-		result = testdata.get(rownumber).get("Result");
-		LoggerLoad.info("Expected result from Excel sheetname " + sheetname + " and " + rownumber + " : " + result);
-		return result;
-	}
 	
-//	public void moveToElement(WebElement element)
-//	{
-//		Actions actions = new Actions(driver);
-//		actions.scrollToElement(element).build().perform();
-//	}
-
 }

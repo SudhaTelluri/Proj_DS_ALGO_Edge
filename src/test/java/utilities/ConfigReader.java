@@ -10,7 +10,8 @@ public class ConfigReader {
 public static Properties intializeProperties() 
 {
 	Properties properties=new Properties();
-	File propFile=new File("C:\\Users\\sudha\\OneDrive\\Documents\\GitHub\\Projects\\Proj-DS-ALGO\\src\\test\\resources\\config\\config.properties");
+	//File propFile=new File("C:\\Users\\sudha\\OneDrive\\Documents\\GitHub\\Projects\\Proj-DS-ALGO\\src\\test\\resources\\config\\config.properties");
+	File propFile=new File("src\\test\\resources\\config\\config.properties");
 	FileInputStream fileInputStream;
 	try {
 		fileInputStream = new FileInputStream(propFile);

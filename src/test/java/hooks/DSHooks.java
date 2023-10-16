@@ -1,30 +1,22 @@
 package hooks;
 
-
-
 import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import factory.DriverFactory;
 import io.cucumber.java.After;
-import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
 import utilities.ConfigReader;
 
 public class DSHooks {
-	
-	
+		
 	WebDriver driver;
 	public static DriverFactory driverFactory;
 	static Scenario scenario;
